@@ -50,5 +50,5 @@ public class Product
     [StringLength(280, ErrorMessage = "Product bar code is too long, max 280 characters")]
     [MinLength(1, ErrorMessage = "Product bar code is too short, min 1 characters")]
     public string BarCode { get; set; } = string.Empty;
-
+    
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jesse\\Documents\\GitHub\\Point of Sale\\PointOfSale\\PointOfSale.csproj": {}
+    "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale\\PointOfSale.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jesse\\Documents\\GitHub\\Point of Sale\\PointOfSale\\PointOfSale.csproj": {
+    "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale\\PointOfSale.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jesse\\Documents\\GitHub\\Point of Sale\\PointOfSale\\PointOfSale.csproj",
+        "projectUniqueName": "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale\\PointOfSale.csproj",
         "projectName": "PointOfSale",
-        "projectPath": "C:\\Users\\jesse\\Documents\\GitHub\\Point of Sale\\PointOfSale\\PointOfSale.csproj",
+        "projectPath": "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale\\PointOfSale.csproj",
         "packagesPath": "C:\\Users\\jesse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jesse\\Documents\\GitHub\\Point of Sale\\PointOfSale\\obj\\",
+        "outputPath": "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jesse\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,11 +38,33 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[6.5.0, )"
             }

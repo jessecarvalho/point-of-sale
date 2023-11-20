@@ -24,5 +24,7 @@ public class Order
     
     [Required(ErrorMessage = "Date is required")]
     public DateTime Date { get; set; }
+    
+    public List<OrderProduct> Products { get; set; } = new List<OrderProduct>();
 
 }
