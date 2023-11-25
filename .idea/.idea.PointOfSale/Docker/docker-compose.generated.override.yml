@@ -1,0 +1,35 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  pointofsale:
+    build:
+      context: "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale"
+      dockerfile: "PointOfSale/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-x64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "C:\\Users\\jesse\\.nuget\\packages"
+      NUGET_FALLBACK_PACKAGES: "C:\\Users\\jesse\\.nuget\\packages"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "pointofsale:dev"
+    ports:
+    - "127.0.0.1:57455:57100"
+    - "127.0.0.1:57456:57300"
+    volumes:
+    - "C:\\Users\\jesse\\.nuget\\packages:/root/.nuget/fallbackpackages"
+    - "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale\\PointOfSale:/app:rw"
+    - "C:\\Users\\jesse\\Documents\\GitHub\\PointOfSale:/src:rw"
+    - "C:\\Users\\jesse\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2023.2.1\\\
+      Linux64:/riderDebugger"
+    - "C:\\Program Files\\JetBrains\\JetBrains Rider 2023.2.1/bin:/riderLogsConf"
+    - "C:\\Users\\jesse\\AppData\\Local\\JetBrains\\Rider2023.2\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2023_11_25_14_18_07:/riderLogs:rw"
+    working_dir: "/app"

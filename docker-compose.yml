@@ -1,0 +1,17 @@
+﻿services:
+  pointofsale:
+    build:
+      context: .
+      dockerfile: PointOfSale/Dockerfile
+    ports:
+      - "8080:80"
+
+  sqlserver:
+    build:
+      context: .
+      dockerfile: PointOfSale/Database/Dockerfile
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Admin123"
