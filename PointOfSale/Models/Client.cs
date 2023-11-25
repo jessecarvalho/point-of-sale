@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PointOfSale.Models;
 
-public class Client
+public record Client
 {
     
     [Key]

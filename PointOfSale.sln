@@ -2,10 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale", "PointOfSale\PointOfSale.csproj", "{446720D5-0752-4439-9233-D2D1E162E7BE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4EDED76-980F-49B5-AE34-0761E10DB71F}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.UnitTests", "PointOfSale.UnitTests\PointOfSale.UnitTests.csproj", "{8A390B4A-CEFE-46CC-92A3-7CC5D6F65F89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,5 +14,9 @@ Global
 		{446720D5-0752-4439-9233-D2D1E162E7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446720D5-0752-4439-9233-D2D1E162E7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446720D5-0752-4439-9233-D2D1E162E7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A390B4A-CEFE-46CC-92A3-7CC5D6F65F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A390B4A-CEFE-46CC-92A3-7CC5D6F65F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A390B4A-CEFE-46CC-92A3-7CC5D6F65F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A390B4A-CEFE-46CC-92A3-7CC5D6F65F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

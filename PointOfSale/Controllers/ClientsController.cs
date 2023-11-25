@@ -30,7 +30,7 @@ public class ClientsController : ControllerBase
     [HttpGet("{id}")]
     [SwaggerOperation(Summary = "Get a client by id")]
     [SwaggerResponse(200, "Client found", typeof(Client))]
-    public IActionResult Get(int id)
+    public IActionResult GetClientById(int id)
     {
         var client = _clientService.GetClientById(id);
         return Ok(client);

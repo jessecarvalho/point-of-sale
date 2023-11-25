@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PointOfSale.Models;
-public class Product
+public record Product
 {
         
     [Key]

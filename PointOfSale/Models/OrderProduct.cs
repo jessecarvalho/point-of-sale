@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PointOfSale.Models;
 
-public class OrderProduct
+public record OrderProduct
 {
 
     [Key]
